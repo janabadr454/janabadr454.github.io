@@ -104,6 +104,7 @@
   border-collapse: collapse;
   width: 90%;
   margin: 20px auto;
+  position: absolute;
 }
 
 .table th, .table td {
@@ -212,9 +213,39 @@ button:hover {
     width: 80%;
   }
 
+  .table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.table th, .table td {
+  border: 1px solid #7A4854;
+  padding: 10px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #C9ADA1;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #F4EDDA;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #C9ADA1;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
   .table, .table thead, .table tbody, .table th, .table td, .table tr {
     display: block;
     width: 100%;
+  }
+
+  .table thead {
+    display: none; 
   }
 
   .table tr {
@@ -230,7 +261,7 @@ button:hover {
   }
 
   .table td::before {
-    content: attr(data-label);
+    content: attr(data-label); 
     position: absolute;
     left: 0;
     width: 45%;
@@ -240,11 +271,6 @@ button:hover {
   }
 }
 
-
-@media (max-width: 480px) {
-  h1, h2 {
-    font-size: 1.5rem;
-  }
 
   .search-input input, .search-input button {
     width: 90%;
