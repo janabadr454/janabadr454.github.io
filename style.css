@@ -107,7 +107,7 @@
 }
 
 .table th, .table td {
-  border:  #7A4854;
+  border: 1px solid #7A4854;
   padding: 10px;
   text-align: center;
 }
