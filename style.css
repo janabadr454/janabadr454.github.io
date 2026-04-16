@@ -105,14 +105,14 @@ body {
 .table th, .table td {
   padding: 10px;
   text-align: center;
-  border: none; /* نشيل الحدود الداخلية */
+  border: none; 
 }
 
 .table th {
   background-color: #C9ADA1;
 }
 
-/* تلوين الصفوف على اللاب */
+
 .table tbody tr:nth-child(odd) {
   background-color: #F4EDDA;
 }
@@ -161,7 +161,7 @@ button:hover {
   color: #9A7B6D;
 }
 
-/* للموبايل */
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -198,7 +198,7 @@ button:hover {
     padding: 10px;
   }
 
-  /* نخلي كل بلوك ياخد لون كامل */
+  
   .table tr:nth-child(odd) {
     background-color: #F4EDDA;
   }
@@ -222,10 +222,10 @@ button:hover {
     font-weight: bold;
     color: #7A4854;
   }
-  /* نخلي العمود الأول يبعد النصوص شوية يمين */
+  
 .table td:first-child {
-  text-align: right;     /* يخلي النصوص تروح يمين */
-  padding-right: 100px;   /* نزود مسافة يمين */
+  text-align: right;     
+  padding-right: 100px;  
 }
 
 
@@ -235,7 +235,7 @@ button:hover {
   }
 }
 
-/* للاب والديسكتوب */
+
 @media (min-width: 769px) {
   .table {
     width: 70%;
