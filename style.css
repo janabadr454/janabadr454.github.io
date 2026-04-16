@@ -245,15 +245,14 @@ button:hover {
 
 
 @media (min-width: 769px) {
-   @media (min-width: 769px) {
   .search-btn {
-    padding: 4px 10px;   /* أصغر بوضوح */
+    padding: 4px 10px;   
     font-size: 12px; 
-    width: auto;    /* خط أصغر */
+    width: 10%;    
   }
 }
 
-}
+
   .table {
     width: 70%;
     max-width: 900px;
