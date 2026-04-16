@@ -53,24 +53,25 @@ body {
   border-radius: 200px;
   outline: none;
   height: 30px;
-  width: 40%;
+  width: 30%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .search-input button {
-  border-radius: 100px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
   background-color: #C79297;
   color: antiquewhite;
   outline: none;
   border: none;
-  padding: 5px 40px;
+  padding: 5px 30px;
   margin: 0 auto;
+  cursor: pointer;
+  
 }
 
-.search-input button:hover {
-  background-color: #7A4854;
-}
 
 .footer1 h2 {
   background-color: #7A4854;
@@ -174,12 +175,19 @@ button:hover {
   }
 
   .search-input input {
-    width: 80%;
+    width: 50%;
   }
 
-  .search-input button {
-    width: 60%;
+  .search-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #7A4854;
+  color: antiquewhite;
+  width: auto;
+  
   }
+  
 
   .table {
     width: 90%;
@@ -237,6 +245,15 @@ button:hover {
 
 
 @media (min-width: 769px) {
+   @media (min-width: 769px) {
+  .search-btn {
+    padding: 4px 10px;   /* أصغر بوضوح */
+    font-size: 12px; 
+    width: auto;    /* خط أصغر */
+  }
+}
+
+}
   .table {
     width: 70%;
     max-width: 900px;
@@ -246,5 +263,14 @@ button:hover {
     position: fixed;
     bottom: 0;
   }
+
+@media (max-width: 600px) {
+  .search-input input {
+    width: 80%;   
+  }
+  .search-input search-btn  {
+    width:auto;   
+  }
 }
+
 
