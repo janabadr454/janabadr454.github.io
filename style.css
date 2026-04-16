@@ -184,9 +184,7 @@ button:hover {
   border-radius: 8px;
   background-color: #7A4854;
   color: antiquewhite;
-  width: auto;
-
-    width: 80%;            
+   width: 80%;            
     min-width: 120px;      
     white-space: nowrap;   
     text-align: center;    
