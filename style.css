@@ -101,13 +101,20 @@
                 color:#B65A4E;
                } 
               .table-container {
-  overflow-x: auto;
+  display: flex;
+  justify-content: center;
 }
+
 
 .table {
   border-collapse: collapse;
   width: 90%;
   margin: 20px auto;
+
+  margin-left: auto;
+  margin-right: auto;
+
+
 }
 
 .table th, .table td {
@@ -202,7 +209,6 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 
 
