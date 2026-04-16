@@ -7,11 +7,13 @@
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal;
-
-
-
+  font-style: normal; 
+  padding-bottom:60px
 }
+
+
+
+
 
 
 
@@ -92,19 +94,20 @@
                  margin: 0;
                  font-size: 14px;
                  font-family: 'Poppins', sans-serif;
-                 position: fixed; 
-                 bottom: 0;
                  width: 100%;
                 
             }
                .courses{
                 color:#B65A4E;
                } 
-              .table {
+              .table-container {
+  overflow-x: auto;
+}
+
+.table {
   border-collapse: collapse;
   width: 90%;
   margin: 20px auto;
-  position: absolute;
 }
 
 .table th, .table td {
@@ -123,40 +126,6 @@
 
 .table tbody tr:nth-child(even) {
   background-color: #C9ADA1;
-}
-
-/* Responsive Table */
-@media (max-width: 768px) {
-  .table, .table thead, .table tbody, .table th, .table td, .table tr {
-    display: block;
-    width: 100%;
-  }
-
-  .table thead {
-    display: none; 
-  }
-
-  .table tr {
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-  }
-
-  .table td {
-    text-align: left;
-    padding-left: 50%;
-    position: relative;
-  }
-
-  .table td::before {
-    content: attr(data-label); 
-    position: absolute;
-    left: 0;
-    width: 45%;
-    padding-left: 0.5rem;
-    font-weight: bold;
-    text-align: left;
-  }
 }
 
                .firstrow{
@@ -177,7 +146,7 @@ input {
   margin-top: 5px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  box-sizing: border-box; /* عشان الـ padding ميخربش العرض */
+  box-sizing: border-box; 
 }
 
 button {
@@ -195,10 +164,10 @@ button:hover {
 }
         .p{
             color:#9A7B6D ;
-        }    
-            
-        
+        }   
+
 @media (max-width: 768px) {
+
   .header {
     flex-direction: column;
     text-align: center;
@@ -209,78 +178,64 @@ button:hover {
     align-items: center;
   }
 
-  .search-input input {
-    width: 80%;
+  .search-input input{
+    width:80%
+  }
+  .search-input button {
+    width: 60%;
   }
 
-  .table {
-  border-collapse: collapse;
-  width: 90%;
-  margin: 20px auto;
-}
-
-.table th, .table td {
-  border: 1px solid #7A4854;
-  padding: 10px;
-  text-align: center;
-}
-
-.table th {
-  background-color: #C9ADA1;
-}
-
-.table tbody tr:nth-child(odd) {
-  background-color: #F4EDDA;
-}
-
-.table tbody tr:nth-child(even) {
-  background-color: #C9ADA1;
-}
-
-/* Responsive Table */
-@media (max-width: 768px) {
-  .table, .table thead, .table tbody, .table th, .table td, .table tr {
-    display: block;
-    width: 100%;
-  }
 
   .table thead {
-    display: none; 
+    display: none;
   }
 
+  .table, 
+  .table tbody, 
+  .table tr, 
+  .table td {
+    display: block;
+    width: 100%;
+    
+}
+.table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
   .table tr {
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    padding: 0.5rem;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   .table td {
-    text-align: left;
+    text-align: right;
     padding-left: 50%;
     position: relative;
   }
 
   .table td::before {
-    content: attr(data-label); 
+    content: attr(data-label);
     position: absolute;
-    left: 0;
-    width: 45%;
-    padding-left: 0.5rem;
+    left: 10px;
     font-weight: bold;
-    text-align: left;
+    color: #7A4854;
   }
 }
-
-
-  .search-input input, .search-input button {
-    width: 90%;
+@media (max-width: 767px) {
+  .footer1 h2 {
+    position: relative;
   }
-
-  form {
-    padding: 10px;
-  }
-
-  form input, form button {
-    font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .footer1 h2 {
+    position: fixed;
+    bottom: 0;
   }
 }
