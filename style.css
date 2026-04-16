@@ -185,8 +185,15 @@ button:hover {
   background-color: #7A4854;
   color: antiquewhite;
   width: auto;
-  
+
+    width: 80%;            
+    min-width: 120px;      
+    white-space: nowrap;   
+    text-align: center;    
   }
+}
+
+  
   
 
   .table {
